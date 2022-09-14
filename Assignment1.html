@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>Assignment1</title>
+
+    <style>
+        fieldset
+        {
+            width:500px;
+            margin-top:20px;
+           
+           
+        }
+        body {
+            margin-left: 100px;
+            margin-top:100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <strong>Fields marked(*)are required</strong>
+    <form>
+    <fieldset>
+        <legend style="color:aqua">Input Text Field Validation</legend>
+        <table cellspacing="5" cellpadding="2">
+
+            <tr><td> First Name*</td><td><input style="border-radius:25px;border-color:aqua;" type="text" id="firstname" placeholder="First name" required /></td></tr>
+
+
+            <tr><td> Last Name*</td><td><input style="border-radius:25px;border-color:aqua;" type="text" id="lastname" placeholder="Last Name" required /></td></tr>
+
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend style="color:aqua">Email and URL  Validation</legend>
+        <table cellspacing="5" cellpadding="2">
+
+            <tr><td> Email*</td><td><input style="border-radius:25px;border-color:aqua;" type="email" id="email" placeholder="e.g.swapnil@example.com" required /></td></tr>
+
+
+            <tr><td> Website*</td><td><input style="border-radius:25px;border-color:aqua;" type="url" id="website" placeholder="e.g.http://www.html5andcss3.org" required /></td></tr>
+
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend style="color:aqua">Mobile or Phone Number Validation</legend>
+        <table cellspacing="5" cellpadding="2">
+
+            <tr><td> Mobile*</td><td><input style="border-radius:25px;border-color:aqua;" type="number" id="number" placeholder="please enter a ten digit number" required /></td></tr>
+
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend style="color:aqua">Drop down box Validation</legend>
+        <table cellspacing="5" cellpadding="2">
+
+            <tr>
+                <td> Country</td>
+                <td>
+                    <select name="country" id="country" style="border-radius:25px;border-color:aqua;">
+                        <option value="Hindi">India</option>
+                        <option value="Chinees">China</option>
+                        <option value="Japanees">Japan</option>
+                        <option value="English">USA</option>
+                        <option value="English">UK</option>
+                        <option value="French">France</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend style="color:aqua">Number Validation with specific range</legend>
+        <table cellspacing="5" cellpadding="2">
+
+            <tr><td>Post Code*</td><td><input style="border-radius:25px;border-color:aqua;" type="number" id="range" min="300000" max="700000" required /></td></tr>
+
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend style="color:aqua">Text area Validation</legend>
+        <table cellspacing="5" cellpadding="2">
+
+            <tr><td>Address*</td><td><textarea style="border-radius:25px;border-color:aqua;" required></textarea></td></tr>
+
+        </table>
+
+    </fieldset>
+
+    <fieldset>
+        <legend style="color:aqua">CheckBox and RadioButton validation</legend>
+        <table cellspacing="5" cellpadding="2">
+
+            <tr><td>Agree to T&C*</td><td><input style="border-radius:25px;border-color:aqua;" type="checkbox" name="name1" id="id1" required /></td></tr>
+            <tr>
+                <td>Agree to T&C*</td>
+                <td>
+                    Male
+                    <input style="border-radius:25px;border-color:aqua;" type="radio" name="name2" id="id2" />
+                    Female
+                    <input style="border-radius:25px;border-color:aqua;" type="radio" name="name2" id="id3" />
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend style="color:aqua">Password Validation using patterns</legend>
+        <table cellspacing="5" cellpadding="2">
+
+            <tr><td>Password*</td><td><input style="border-radius:25px;border-color:aqua;" type="text" id="range" pattern="[A-Za-z]{3}" required /></td></tr>
+
+        </table>
+    </fieldset> 
+
+        <input type="submit" value="SignUp"/>
+
+        </form>
+</body>
+</html>
